@@ -43,7 +43,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.prepareToRecord()
         audioRecorder.record()
         
-        println("recording")
         statusLable.text = "recording"
         statusLable.hidden = false
         stopButton.hidden = false

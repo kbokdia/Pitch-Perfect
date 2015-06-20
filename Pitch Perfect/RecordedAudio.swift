@@ -11,4 +11,7 @@ import Foundation
 class RecordedAudio{
     var filePathURL:NSURL!
     var title:String!
+    
+    func RecordedAudio(){
+    }
 }
