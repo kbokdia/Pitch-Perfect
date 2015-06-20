@@ -51,10 +51,10 @@ class PlaySoundsViewController: UIViewController {
     }
     
     func playAudio(rate:Float){
-        self.audioPlayer.stop()
-        self.audioPlayer.rate = rate
-        self.audioPlayer.currentTime = 0.0
-        self.audioPlayer.play()
+        audioPlayer.stop()
+        audioPlayer.rate = rate
+        audioPlayer.currentTime = 0.0
+        audioPlayer.play()
     }
     
     @IBAction func playChipmunk(sender: AnyObject) {
@@ -65,14 +65,11 @@ class PlaySoundsViewController: UIViewController {
         playAudioWithVariablePitch(-1000)
     }
     @IBAction func stopAudio(sender: AnyObject) {
-        self.audioPlayer.stop()
+        stopAll()
     }
     
     func playAudioWithVariablePitch(pitch:Float){
-        audioPlayer.stop()
-        audioEngine.stop()
-        audioEngine.reset()
-        
+        stopAll()
         var audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
         
@@ -89,14 +86,11 @@ class PlaySoundsViewController: UIViewController {
         
         audioPlayerNode.play()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func stopAll(){
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
     }
-    */
 
 }
