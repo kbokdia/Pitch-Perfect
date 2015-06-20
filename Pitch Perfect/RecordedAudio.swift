@@ -12,6 +12,8 @@ class RecordedAudio{
     var filePathURL:NSURL!
     var title:String!
     
-    func RecordedAudio(){
+    init(title:String!,filePathURL:NSURL!){
+        self.filePathURL = filePathURL
+        self.title = title
     }
 }
