@@ -20,6 +20,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         stopButton.hidden = true
+        statusLable.text = "Tap to record"
     }
 
     @IBAction func recordAudio(sender: UIButton) {

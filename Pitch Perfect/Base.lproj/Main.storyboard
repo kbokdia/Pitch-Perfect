@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N2b-QZ-2ko">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N2b-QZ-2ko">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -28,7 +28,7 @@
                                     <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="XBS-pb-1Gj"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpa-Vf-7BF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpa-Vf-7BF">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="3BS-2e-iBO"/>
@@ -224,16 +224,16 @@
                                 <exclude reference="rKQ-NA-9A4"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="SHg-3E-sse"/>
-                                <exclude reference="fcU-AH-1oc"/>
+                                <exclude reference="BGK-y5-T4i"/>
+                                <exclude reference="6G4-RU-B9P"/>
                                 <exclude reference="LcN-Ld-UhW"/>
                                 <exclude reference="w81-nO-aAn"/>
+                                <exclude reference="SHg-3E-sse"/>
+                                <exclude reference="fcU-AH-1oc"/>
                                 <exclude reference="73m-ZX-GI0"/>
                                 <exclude reference="JGR-QT-ang"/>
                                 <exclude reference="okm-Wx-xRn"/>
                                 <exclude reference="xPK-Kr-46U"/>
-                                <exclude reference="6G4-RU-B9P"/>
-                                <exclude reference="BGK-y5-T4i"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -245,16 +245,16 @@
                                 <include reference="rKQ-NA-9A4"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="SHg-3E-sse"/>
-                                <include reference="fcU-AH-1oc"/>
+                                <include reference="BGK-y5-T4i"/>
+                                <include reference="6G4-RU-B9P"/>
                                 <include reference="LcN-Ld-UhW"/>
                                 <include reference="w81-nO-aAn"/>
+                                <include reference="SHg-3E-sse"/>
+                                <include reference="fcU-AH-1oc"/>
                                 <include reference="73m-ZX-GI0"/>
                                 <include reference="JGR-QT-ang"/>
                                 <include reference="okm-Wx-xRn"/>
                                 <include reference="xPK-Kr-46U"/>
-                                <include reference="6G4-RU-B9P"/>
-                                <include reference="BGK-y5-T4i"/>
                             </mask>
                         </variation>
                     </view>
